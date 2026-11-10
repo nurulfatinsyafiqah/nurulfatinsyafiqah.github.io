@@ -1,90 +1,93 @@
+/* Dark Minimalist Terminal Theme */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
-    color: #1f2937;
-    background: #f5f7fa;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
-header, main, footer {
-    width: min(900px, 92%);
-    margin: auto;
+    background-color: #0d0e11;
+    color: #9da5b4;
+    font-family: 'Courier New', Courier, monospace, monospace;
+    line-height: 1.7;
+    padding: 0 16px;
 }
 
 header {
-    padding: 48px 0 24px;
-}
-
-header h1 {
-    margin: 0 0 8px 0;
-    color: #8b0002; /* Theme accent color matching rubric guidelines */
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 32px 0 24px;
 }
 
 nav {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 16px;
+    gap: 20px;
+    justify-content: center;
 }
 
 nav a {
+    color: #abb2bf;
     text-decoration: none;
-    color: #0056b3;
-    font-weight: bold;
-    padding: 6px 12px;
-    background-color: #ffffff;
-    border-radius: 6px;
-    border: 1px solid #e2e8f0;
-    transition: background-color 0.2s ease;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
 }
 
-nav a:hover {
-    background-color: #eef2ff;
+nav a:hover, nav a.active {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+main {
+    max-width: 780px;
+    margin: 0 auto 60px;
 }
 
 section {
-    margin: 24px 0;
-    padding: 28px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    margin-bottom: 56px;
 }
 
-section h2 {
-    margin-top: 0;
-    color: #8b0002;
-    border-bottom: 2px solid #f0f0f0;
+/* Header Avatar + Name Alignment */
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.profile-pic {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #282c34;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.subtitle {
+    color: #abb2bf;
+    font-size: 1.05rem;
+    margin-top: 4px;
+}
+
+.intro-text {
+    font-size: 1rem;
+    color: #abb2bf;
+    margin-bottom: 24px;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #21252b;
     padding-bottom: 8px;
 }
 
-.artifact {
-    margin-bottom: 24px;
-    padding-bottom: 16px;
-    border-bottom: 1px dashed #e2e8f0;
-}
-
-.artifact:last-child {
-    border-bottom: none;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin: 12px 0;
-}
-
-a {
-    color: #0a6538;
-}
-
-footer {
-    text-align: center;
-    padding: 32px 0;
-    font-size: 0.9rem;
-    color: #6b7280;
-}
+.fun-facts {
