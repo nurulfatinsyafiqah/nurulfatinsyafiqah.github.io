@@ -8,44 +8,166 @@
 </head>
 <body>
 
-    <header>
-        <nav>
-            <a href="#home" class="active">Home</a>
-            <a href="#profile">Professional Profile</a>
-            <a href="#artifacts">Selected Work</a>
-            <a href="#summary">Course Summary</a>
-            <a href="#acknowledgements">Sources & Acknowledgements</a>
-        </nav>
+    <!-- 1. Top Quick Access Navbar -->
+    <header class="top-nav">
+        <div class="nav-container">
+            <span class="logo">✦ Fatin's Portfolio</span>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#profile">Profile</a>
+                <a href="#journey">Learning Journey</a>
+                <a href="#artifacts">Selected Work</a>
+                <a href="#summary">Summary</a>
+                <a href="#acknowledgements">Sources</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <!-- Home / Intro Section with Profile Picture -->
+        <!-- Hero Section inspired by Jon Rodz layout -->
         <section id="home" class="hero-section">
-            <div class="profile-header">
-                <!-- Replace 'images/profile.jpg' with your actual image path -->
-                <img src="images/profile.jpg" alt="Nurul Fatin Syafiqah" class="profile-pic">
-                <div class="profile-titles">
-                    <h1>Nurul Fatin Syafiqah</h1>
-                    <p class="subtitle">Data Engineering Student &bull; UTM &bull; SCST1133</p>
+            <div class="hero-container">
+                <div class="hero-text">
+                    <span class="greeting">HI, I'M NURUL FATIN SYAFIQAH</span>
+                    <h1 class="hero-title">Fatin Syafiqah</h1>
+                    <p class="hero-subtitle">
+                        Data Engineering Student at UTM &bull; SCST1133[cite: 1]
+                    </p>
+                    <p class="hero-bio">
+                        Building clean database logic, structured pipelines, and interactive digital experiences. 
+                        Welcome to my official course learning portfolio.
+                    </p>
+                    <a href="#artifacts" class="explore-btn">EXPLORE MY WORK &rarr;</a>
+                </div>
+
+                <div class="hero-image-card">
+                    <!-- Save your photo as images/profile.jpg -->
+                    <img src="images/profile.jpg" alt="Nurul Fatin Syafiqah" class="profile-img">
                 </div>
             </div>
+        </section>
 
-            <p class="intro-text">
-                I am an undergraduate student pursuing a Bachelor of Computer Science (Data Engineering) at 
-                Universiti Teknologi Malaysia (UTM). Passionate about data systems, database architecture, 
-                and software logic. This e-portfolio showcases my coursework, artifacts, and reflections for SCST1133.
-            </p>
-
-            <div class="fun-facts">
-                <h3>Fun facts ✨</h3>
-                <ul>
-                    <li>Favorite quote: "Don't imitate, understand."</li>
-                    <li>Technical focus: Data pipelines, logic structures, and database management.</li>
-                    <li>Creative outlet: Digital illustration and character lore design.</li>
-                    <li>Rhythm & precision enthusiast: High-level Geometry Dash player.</li>
-                </ul>
+        <!-- Professional Profile Section -->
+        <section id="profile" class="content-section">
+            <div class="section-container">
+                <h2>Professional Profile</h2>
+                <div class="info-card">
+                    <p><strong>Programme:</strong> Bachelor of Computer Science (Data Engineering) with Hons</p>
+                    <p><strong>Institution:</strong> Universiti Teknologi Malaysia (UTM)</p>
+                    <p><strong>Core Skills:</strong> C++, Java, Python, SQL, Git, HTML/CSS</p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></p>
+                </div>
             </div>
+        </section>
 
-            <div class="contact-links">
-                <span>[email: <a href="mailto:fatin@example.com">fatin@example.com</a>]</span>
-                <span>[github
+        <!-- Learning Journey Section -->
+        <section id="journey" class="content-section">
+            <div class="section-container">
+                <h2>Learning Journey</h2>
+                <p>A chronological reflection on key milestones, skills acquired, and data engineering concepts mastered throughout the semester[cite: 1].</p>
+            </div>
+        </section>
+
+        <!-- 2. Interactive Work / Artifact Grid (Clickable Cards) -->
+        <section id="artifacts" class="content-section">
+            <div class="section-container">
+                <div class="section-header-flex">
+                    <h2>Work I've Done</h2>
+                    <span class="sub-tag">SCST1133 Artifacts</span>
+                </div>
+
+                <div class="work-grid">
+                    <!-- Clickable Box 1 -->
+                    <a href="#artifact-figma" class="work-card card-sky">
+                        <div class="card-content">
+                            <h3>Design Thinking & Figma &rarr;</h3>
+                            <p>Problem identification, UI/UX prototype, and user flow mapping.</p>
+                        </div>
+                    </a>
+
+                    <!-- Clickable Box 2 -->
+                    <a href="#artifact-talk" class="work-card card-navy">
+                        <div class="card-content">
+                            <h3>Industry Talk &rarr;</h3>
+                            <p>Key takeaways, posters, notes, and professional connections to data engineering[cite: 1].</p>
+                        </div>
+                    </a>
+
+                    <!-- Clickable Box 3 -->
+                    <a href="#artifact-visit" class="work-card card-dark">
+                        <div class="card-content">
+                            <h3>Industry Visit &rarr;</h3>
+                            <p>Approved site photos, structural observations, and industry lessons learned[cite: 1].</p>
+                        </div>
+                    </a>
+
+                    <!-- Clickable Box 4 -->
+                    <a href="#artifact-video" class="work-card card-yellow">
+                        <div class="card-content">
+                            <h3>DE Lifecycle Video &rarr;</h3>
+                            <p>Video presentation, storyboard slides, and architectural lifecycle breakdown[cite: 1].</p>
+                        </div>
+                    </a>
+
+                    <!-- Clickable Box 5 -->
+                    <a href="#artifact-other" class="work-card card-light-yellow">
+                        <div class="card-content">
+                            <h3>Other Selected Evidence &rarr;</h3>
+                            <p>Data acquisition techniques, tools quality checks, and external links[cite: 1].</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Expanded Artifact Details Below -->
+                <div class="artifact-details">
+                    <article id="artifact-figma" class="detail-card">
+                        <h3>Design Thinking and Figma</h3>
+                        <p>Detailed breakdown of your Figma prototype, problem statement, and CLO reflection[cite: 1].</p>
+                    </article>
+
+                    <article id="artifact-talk" class="detail-card">
+                        <h3>Industry Talk</h3>
+                        <p>Summary of industrial insights and technical takeaways[cite: 1].</p>
+                    </article>
+
+                    <article id="artifact-visit" class="detail-card">
+                        <h3>Industry Visit</h3>
+                        <p>Site report, photos, and professional reflections[cite: 1].</p>
+                    </article>
+
+                    <article id="artifact-video" class="detail-card">
+                        <h3>Data Engineering Lifecycle Video</h3>
+                        <p>Lifecycle implementation details, video link, and architectural decisions[cite: 1].</p>
+                    </article>
+
+                    <article id="artifact-other" class="detail-card">
+                        <h3>Other Selected Evidence</h3>
+                        <p>Data acquisition methodologies, tools, and quality validation results[cite: 1].</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Learning Summary -->
+        <section id="summary" class="content-section">
+            <div class="section-container">
+                <h2>Course Learning Summary</h2>
+                <p>Overall synthesis of how all coursework fulfilled the SCST1133 course objectives[cite: 1].</p>
+            </div>
+        </section>
+
+        <!-- Sources & Acknowledgements -->
+        <section id="acknowledgements" class="content-section">
+            <div class="section-container">
+                <h2>Sources & Acknowledgements</h2>
+                <p>Attributions for external tools, libraries, and references used[cite: 1].</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nurul Fatin Syafiqah &bull; SCST1133 Data Engineering Ecosystem[cite: 1]</p>
+    </footer>
+
+</body>
+</html>
