@@ -1,4 +1,4 @@
-/* Dark Minimalist Terminal Theme */
+/* Dark Aquamarine & Soft Pastel Blue Minimalist Theme */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,8 +6,8 @@
 }
 
 body {
-    background-color: #0d0e11;
-    color: #9da5b4;
+    background-color: #0b1319; /* Deep marine dark background */
+    color: #a3c4d8;            /* Soft pastel ice blue body text */
     font-family: 'Courier New', Courier, monospace, monospace;
     line-height: 1.7;
     padding: 0 16px;
@@ -27,15 +27,15 @@ nav {
 }
 
 nav a {
-    color: #abb2bf;
+    color: #70a4c4;            /* Soft muted blue links */
     text-decoration: none;
     font-size: 0.95rem;
-    transition: color 0.2s ease;
+    transition: color 0.2s ease, border-bottom 0.2s ease;
 }
 
 nav a:hover, nav a.active {
-    color: #ffffff;
-    border-bottom: 1px solid #ffffff;
+    color: #7fffd4;            /* Vibrant aquamarine glow on hover/active */
+    border-bottom: 1px solid #7fffd4;
 }
 
 main {
@@ -60,34 +60,22 @@ section {
     height: 90px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #282c34;
+    border: 2px solid #48d1cc;  /* Medium aquamarine border ring */
+    box-shadow: 0 0 12px rgba(127, 255, 212, 0.15); /* Subtle aquamarine glow */
 }
 
 h1 {
-    color: #ffffff;
+    color: #e0f7fa;            /* Bright ice white-blue */
     font-size: 2.2rem;
     font-weight: 700;
     letter-spacing: -0.5px;
 }
 
 .subtitle {
-    color: #abb2bf;
+    color: #76c7c0;            /* Soft pastel teal/aquamarine subtitle */
     font-size: 1.05rem;
     margin-top: 4px;
 }
 
 .intro-text {
-    font-size: 1rem;
-    color: #abb2bf;
-    margin-bottom: 24px;
-}
-
-h2 {
-    color: #ffffff;
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #21252b;
-    padding-bottom: 8px;
-}
-
-.fun-facts {
+    font-size
