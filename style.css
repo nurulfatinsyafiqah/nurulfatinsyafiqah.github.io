@@ -1,22 +1,90 @@
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  color: #1f2937;
-  background: #f5f7fa;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+    margin: 0;
+    color: #1f2937;
+    background: #f5f7fa;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
+
 header, main, footer {
-  width: min(960px, 92%);
-  margin: auto;
+    width: min(900px, 92%);
+    margin: auto;
 }
-header { padding: 48px 0 24px; }
-nav { display: flex; flex-wrap: wrap; gap: 16px; }
+
+header {
+    padding: 48px 0 24px;
+}
+
+header h1 {
+    margin: 0 0 8px 0;
+    color: #8b0002; /* Theme accent color matching rubric guidelines */
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0056b3;
+    font-weight: bold;
+    padding: 6px 12px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+    transition: background-color 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #eef2ff;
+}
+
 section {
-  margin: 20px 0;
-  padding: 24px;
-  background: white;
-  border-radius: 12px;
+    margin: 24px 0;
+    padding: 28px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
-img { max-width: 100%; height: auto; }
-a { color: #8a1538; }
+
+section h2 {
+    margin-top: 0;
+    color: #8b0002;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 8px;
+}
+
+.artifact {
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px dashed #e2e8f0;
+}
+
+.artifact:last-child {
+    border-bottom: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 12px 0;
+}
+
+a {
+    color: #0a6538;
+}
+
+footer {
+    text-align: center;
+    padding: 32px 0;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
